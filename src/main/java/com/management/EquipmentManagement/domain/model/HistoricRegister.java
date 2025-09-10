@@ -9,6 +9,8 @@ import java.time.OffsetDateTime;
  * Represents an register part of equipment historic
  *
  * @author Liedson dos Reis Pereira
+ * @version 0.0.1-SNAPSHOT
+ * @since 2025-09-09
  */
 @Getter
 @Setter

@@ -8,9 +8,13 @@ import org.springframework.stereotype.Component;
 
 /**
  * Class that validate if equipment physic instance already has inserted in database
+ *
+ * @author Liedson dos Reis Pereira
+ * @version 0.0.1-SNAPSHOT
+ * @since 2025-09-09
  */
 @Component
-public class PhysicEquipmentNotExistsValidation implements BussinessValidation<PhysicalEquipment> {
+public class PhysicEquipmentNotExistsValidation implements BusinessValidation<PhysicalEquipment> {
 
     @Autowired
     PhysicEquipmentRepository equipmentRepository;

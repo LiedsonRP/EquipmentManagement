@@ -10,6 +10,8 @@ import java.util.List;
  * Represent a Physic instance of an equipment model
  *
  * @author Liedson dos Reis Pereira
+ * @version 0.0.1-SNAPSHOT
+ * @since 2025-09-09
  */
 @Getter
 @Setter

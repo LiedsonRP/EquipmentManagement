@@ -8,9 +8,13 @@ import org.springframework.stereotype.Component;
 
 /**
  * Class that validate if a determined category already has inserted in database
+ *
+ * @author Liedson dos Reis Pereira
+ * @version 0.0.1-SNAPSHOT
+ * @since 2025-09-09
  */
 @Component
-public class CategoryNotExistsValidation implements BussinessValidation<EquipmentCategory> {
+public class CategoryNotExistsValidation implements BusinessValidation<EquipmentCategory> {
 
     @Autowired
     CategoryRepository categoryRepository;
