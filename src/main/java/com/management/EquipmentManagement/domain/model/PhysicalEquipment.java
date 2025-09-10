@@ -3,7 +3,7 @@ package com.management.EquipmentManagement.domain.model;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.time.LocalDateTime;
+import java.time.OffsetDateTime;
 import java.util.List;
 
 /**
@@ -33,8 +33,11 @@ public class PhysicalEquipment {
     @Enumerated(EnumType.STRING)
     private EquipmentStatus status;
 
-    private LocalDateTime lastLocationDatetime;
-    private LocalDateTime lastReturnDateTime;
+    @Column(name = "last_location_datetime")
+    private OffsetDateTime lastLocationDatetime;
+
+    @Column(name = "last_return_datetime")
+    private OffsetDateTime lastReturnDateTime;
 
     @OneToMany(mappedBy = "equipment", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<HistoricRegister> equipmentHistoric;

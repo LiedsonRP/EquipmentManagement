@@ -10,7 +10,7 @@ import lombok.Getter;
 @Getter
 public enum EquipmentStatus {
 
-    LOCATION("LOCADO"),
+    LOCATED("LOCADO"),
     MAINTENANCE("EM MANUTENÇÃO"),
     AVAILABLE("DISPONÍVEL");
 

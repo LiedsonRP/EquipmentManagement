@@ -3,7 +3,7 @@ package com.management.EquipmentManagement.domain.model;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.time.LocalDateTime;
+import java.time.OffsetDateTime;
 
 /**
  * Represents an register part of equipment historic
@@ -28,5 +28,5 @@ public class HistoricRegister {
 
     @Enumerated(EnumType.STRING)
     private EquipmentStatus status;
-    private LocalDateTime createdAt;
+    private OffsetDateTime createdAt;
 }

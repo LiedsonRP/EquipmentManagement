@@ -26,11 +26,6 @@ public class EquipmentManagerService {
      */
     public void insertNewCompleteEquipment(EquipmentCategory category, EquipmentModel model, PhysicalEquipment equipment) {
 
-        List<BussinessValidation> validations = {}
-
-        try {
-
-        }
     }
 
 }
